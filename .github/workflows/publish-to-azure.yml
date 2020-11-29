@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # this action will checkout our repository to the github action runner
-      - name: Checkout prkrcloud.com Repository
+      - name: Checkout prkrlabs.com Repository
         uses: actions/checkout@master
         with:
           # includes our theme submodule
