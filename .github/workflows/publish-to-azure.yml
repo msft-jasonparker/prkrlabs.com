@@ -1,0 +1,47 @@
+name: Publish Website to Azure
+on:
+  # this is the trigger event
+  # when you push a new commit to your repository in the 'main' branch
+  # this workflow will run
+  push:
+    branches:
+      - main
+jobs:
+  upload:
+    # linux is required for the hugo-actions step
+    runs-on: ubuntu-latest
+    steps:
+      # this action will checkout our repository to the github action runner
+      - name: Checkout prkrcloud.com Repository
+        uses: actions/checkout@master
+        with:
+          # includes our theme submodule
+          submodules: true
+
+      # this is the hugo action that builds our site into a folder called 'public'
+      # the public folder only exists on the github action runner while its running
+      # it won't appear in your repository
+      - name: Build Hugo Site into Public
+        uses: chabad360/hugo-actions@master
+        with:
+          # Use if you have a need to build the site to another directory
+          buildPath: 'public'
+          
+          # Use if your site requires a specific version of Hugo.
+          # Append "extended_" to the begining to use Hugo Extended
+          hugoVersion: 'extended_0.78.2'
+
+          # Use if you want to pass some custom arguments to Hugo
+          args: --gc --minify --cleanDestinationDir --forceSyncStatic
+      
+      # this action uses the Azure CLI built into the github action runner
+      - name: Azure CLI - Upload Batch to Storage Account
+        # not required, but better to use variables for some things instead of hard coded
+        env:
+          VERB: 'upload-batch' # uploads the content as a batch job
+          CONTAINER_NAME: '$web' # the name of our website container
+          HUGO_BUILDPATH: 'public' # the hugo build directory
+        run: |
+          # batch upload to azure storage account - update env params above to match your environment
+          # the quotes around the secet variable is required          
+          az storage blob $VERB --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" --source $HUGO_BUILDPATH --destination $CONTAINER_NAME
