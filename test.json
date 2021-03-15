@@ -1,0 +1,312 @@
+{
+    "ResourceGroupName":  "lab-carbon-rg",
+    "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Compute/virtualMachines/labvm9-lrqo32d",
+    "VmId":  "a477ab6f-b807-4be2-9dfa-cb64d2742c34",
+    "Name":  "labvm9-lrqo32d",
+    "Type":  "Microsoft.Compute/virtualMachines",
+    "Location":  "usgovarizona",
+    "LicenseType":  null,
+    "Tags":  {
+
+             },
+    "AvailabilitySetReference":  null,
+    "DiagnosticsProfile":  {
+                               "BootDiagnostics":  {
+                                                       "Enabled":  true,
+                                                       "StorageUri":  "https://carbonstgacct42.blob.core.usgovcloudapi.net/"
+                                                   }
+                           },
+    "Extensions":  [
+                       {
+                           "ForceUpdateTag":  "636893508265910301",
+                           "Publisher":  "Microsoft.OSTCExtensions",
+                           "VirtualMachineExtensionType":  "AzureEnhancedMonitorForLinux",
+                           "TypeHandlerVersion":  "3.0",
+                           "AutoUpgradeMinorVersion":  true,
+                           "Settings":  [
+                                            [
+                                                [
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    [
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ],
+                                                        [
+                                                            [
+
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ],
+                           "ProtectedSettings":  null,
+                           "ProvisioningState":  "Succeeded",
+                           "InstanceView":  null,
+                           "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Compute/virtualMachines/labvm9-lrqo32d/extensions/AzureEnhancedMonitorForLinux",
+                           "Name":  "AzureEnhancedMonitorForLinux",
+                           "Type":  "Microsoft.Compute/virtualMachines/extensions",
+                           "Location":  "usgovarizona",
+                           "Tags":  null
+                       },
+                       {
+                           "ForceUpdateTag":  "636893507657034682",
+                           "Publisher":  "Microsoft.OSTCExtensions",
+                           "VirtualMachineExtensionType":  "LinuxDiagnostic",
+                           "TypeHandlerVersion":  "2.3",
+                           "AutoUpgradeMinorVersion":  true,
+                           "Settings":  [
+                                            [
+                                                [
+
+                                                ]
+                                            ]
+                                        ],
+                           "ProtectedSettings":  null,
+                           "ProvisioningState":  "Succeeded",
+                           "InstanceView":  null,
+                           "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Compute/virtualMachines/labvm9-lrqo32d/extensions/LinuxDiagnostic",
+                           "Name":  "LinuxDiagnostic",
+                           "Type":  "Microsoft.Compute/virtualMachines/extensions",
+                           "Location":  "usgovarizona",
+                           "Tags":  null
+                       },
+                       {
+                           "ForceUpdateTag":  null,
+                           "Publisher":  "Microsoft.EnterpriseCloud.Monitoring",
+                           "VirtualMachineExtensionType":  "OmsAgentForLinux",
+                           "TypeHandlerVersion":  "1.0",
+                           "AutoUpgradeMinorVersion":  true,
+                           "Settings":  [
+                                            [
+                                                [
+
+                                                ]
+                                            ]
+                                        ],
+                           "ProtectedSettings":  null,
+                           "ProvisioningState":  "Succeeded",
+                           "InstanceView":  null,
+                           "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Compute/virtualMachines/labvm9-lrqo32d/extensions/OmsAgentForLinux",
+                           "Name":  "OmsAgentForLinux",
+                           "Type":  "Microsoft.Compute/virtualMachines/extensions",
+                           "Location":  "usgovarizona",
+                           "Tags":  null
+                       }
+                   ],
+    "HardwareProfile":  {
+                            "VmSize":  "Standard_DS1_v2"
+                        },
+    "InstanceView":  null,
+    "NetworkProfile":  {
+                           "NetworkInterfaces":  [
+                                                     {
+                                                         "Primary":  true,
+                                                         "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Network/networkInterfaces/labvm9-lrqo32d-vNic"
+                                                     },
+                                                     {
+                                                         "Primary":  false,
+                                                         "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/lab-carbon-rg/providers/Microsoft.Network/networkInterfaces/labvm9-lrqo32d-vNic1"
+                                                     }
+                                                 ]
+                       },
+    "OSProfile":  {
+                      "ComputerName":  "labvm9-lrqo32d",
+                      "AdminUsername":  "AzureLabAdmin",
+                      "AdminPassword":  null,
+                      "CustomData":  null,
+                      "WindowsConfiguration":  null,
+                      "LinuxConfiguration":  {
+                                                 "DisablePasswordAuthentication":  false,
+                                                 "Ssh":  null,
+                                                 "ProvisionVMAgent":  true
+                                             },
+                      "Secrets":  [
+
+                                  ],
+                      "AllowExtensionOperations":  true
+                  },
+    "Plan":  null,
+    "ProvisioningState":  "Succeeded",
+    "StorageProfile":  {
+                           "ImageReference":  {
+                                                  "Publisher":  "RedHat",
+                                                  "Offer":  "RHEL",
+                                                  "Sku":  "7.3",
+                                                  "Version":  "latest",
+                                                  "Id":  null
+                                              },
+                           "OsDisk":  {
+                                          "OsType":  1,
+                                          "EncryptionSettings":  null,
+                                          "Name":  "labvm9-lrqo32d_OsDisk_1_4d66c29888dd496cb549bd7467c2a54f",
+                                          "Vhd":  null,
+                                          "Image":  null,
+                                          "Caching":  2,
+                                          "WriteAcceleratorEnabled":  null,
+                                          "DiffDiskSettings":  null,
+                                          "CreateOption":  "FromImage",
+                                          "DiskSizeGB":  32,
+                                          "ManagedDisk":  {
+                                                              "StorageAccountType":  "StandardSSD_LRS",
+                                                              "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/LAB-CARBON-RG/providers/Microsoft.Compute/disks/labvm9-lrqo32d_OsDisk_1_4d66c29888dd496cb549bd7467c2a54f"
+                                                          }
+                                      },
+                           "DataDisks":  [
+                                             {
+                                                 "Lun":  0,
+                                                 "Name":  "CarbonDataDisk0-labvm9",
+                                                 "Vhd":  null,
+                                                 "Image":  null,
+                                                 "Caching":  1,
+                                                 "WriteAcceleratorEnabled":  null,
+                                                 "CreateOption":  "Attach",
+                                                 "DiskSizeGB":  500,
+                                                 "ManagedDisk":  {
+                                                                     "StorageAccountType":  "Premium_LRS",
+                                                                     "Id":  "/subscriptions/e2633106-5acc-4749-a89d-82c7f4795801/resourceGroups/LAB-CARBON-RG/providers/Microsoft.Compute/disks/CarbonDataDisk0-labvm9"
+                                                                 }
+                                             }
+                                         ]
+                       },
+    "DisplayHint":  0,
+    "Identity":  null,
+    "Zones":  null,
+    "FullyQualifiedDomainName":  null,
+    "AdditionalCapabilities":  null,
+    "RequestId":  "d6c28567-c0aa-49c5-b613-5cf4a035a5b7",
+    "StatusCode":  200
+}
